@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Step 2</title>
+</head>
+<body>
+    <h1>Sign Up - Step 2</h1>
+    <h2>Contact Information</h2>
+
+    <form action="signup3.html" method="get">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <input list="countries" id="country" name="country" required>
+        <datalist id="countries">
+            <option value="Pakistan">
+            <option value="India">
+            <option value="United Arab Emirates">
+            <option value="Saudi Arabia">
+            <option value="United Kingdom">
+            <option value="United States">
+            <option value="Canada">
+        </datalist>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+        <br><br>
+
+        <label for="additional-address">Additional Address Details:</label>
+        <textarea id="additional-address" name="additional-address" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <label for="contact-method">Preferred Contact Method:</label>
+        <select id="contact-method" name="contact-method">
+            <option value="">Choose one</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="sms">SMS</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">I confirm that the information is correct.</label>
+        <br><br>
+
+        <button type="button" onclick="location.href='signup1.html'">Previous</button>
+        <button type="submit">Next</button>
+    </form>
+
+    <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
